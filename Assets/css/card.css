@@ -1,0 +1,38 @@
+.pilihan-card-responsive {
+  width: 100%;
+}
+
+.pilihan-card-custo{
+  border-radius: 20px;
+  background-image: linear-gradient(270deg,#21c8f6,#637bff);
+  text-align: center;
+  width: 49%;
+}
+
+.pilihan-card-admin{
+  border-radius: 20px;
+  background-image: linear-gradient(90deg,#21c8f6,#637bff);
+  text-align: center;
+  width: 49%;
+}
+
+
+.pilihan-card-border{
+  padding:30px 20px;
+  transition: all 0.3s;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+  display: inline-block;
+}
+
+.pilihan-card-border:hover{
+  background-image: radial-gradient(circle,#21c8f6,#637bff);
+  border-radius: 20px;
+  color: #343434;
+  text-decoration: none;
+}
