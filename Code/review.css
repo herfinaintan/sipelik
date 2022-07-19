@@ -1,0 +1,48 @@
+.rating{
+	position: absolute;
+	top: 105%;
+	left: 130%;
+	transform: translate(-170%,-200%) rotateY(180deg);
+	display: flex;
+}
+.container .card .card-body .rating{
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	width: 500%;
+	transform: translate(-50%,-50%) rotateY(180deg);
+	display: inline-block;
+}
+.rating input{
+	display: none;
+}
+.rating label{
+	display: block;
+	cursor: pointer;
+	width: 200%;
+}
+.rating label:before{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 50px;
+	color: #101010;
+}
+.rating label:after{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 50px;
+	color: gold;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+	opacity: 1;
+}
